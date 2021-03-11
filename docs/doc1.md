@@ -90,7 +90,7 @@ Reference-style: ![alt text][logo]
 
 Images from any folder can be used by providing path to file. Path should be relative to the original markdown file or absolute to the `/static` folder.
 
-![img](/img/logo.svg)
+![img](/img/logo.png)
 
 ---
 
