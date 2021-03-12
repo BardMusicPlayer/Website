@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.MogAmp": {
+    "message": "MogAmp",
+    "description": "The label for category MogAmp in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.MogDoot": {
+    "message": "MogDoot",
+    "description": "The label for category MogDoot in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.MogNotate": {
+    "message": "MogNotate",
+    "description": "The label for category MogNotate in sidebar someSidebar"
+  }
+}

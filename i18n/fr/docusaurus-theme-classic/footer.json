@@ -1,0 +1,50 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.MogAmp": {
+    "message": "MogAmp",
+    "description": "The label of footer link with label=MogAmp linking to docs/mogamp"
+  },
+  "link.item.label.MogDoot": {
+    "message": "MogDoot",
+    "description": "The label of footer link with label=MogDoot linking to docs/mogdoot"
+  },
+  "link.item.label.MogNotate": {
+    "message": "MogNotate",
+    "description": "The label of footer link with label=MogNotate linking to docs/mognotate"
+  },
+  "link.item.label.Twitch": {
+    "message": "Twitch",
+    "description": "The label of footer link with label=Twitch linking to https://twitch.tv/MoogleTroupe"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/4XGHQ72"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/MoogleTroupe"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://youtube.com/MoogleTroupe"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/MogMusic"
+  },
+  "link.item.label.Donate": {
+    "message": "Donate",
+    "description": "The label of footer link with label=Donate linking to https://streamelements.com/moogletroupe/tip"
+  }
+}

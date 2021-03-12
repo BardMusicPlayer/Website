@@ -1,33 +1,35 @@
 # Website
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+https://mogmusic.app is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
 ## Installation
 
 ```console
-yarn install
+npm install
 ```
 
 ## Local Development
 
 ```console
-yarn start
+npm run start
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+# Wiki Pages
 
+Wiki Documents are located in the ```docs``` folder.
+
+# Translations
+
+Language translations are located in the ```i18n\{code}\docusaurus-plugin-content-docs\current``` folder, where ```{code}``` is ```fr``` for French, ```ja``` for Japanese, or ```ko``` for Korean.
+
+Additionally there are a few strings in these locations that need to be translated:
+
+```homepage.Description.\*``` and ```homepage.GetStarted``` in file ```i18n\(code}\code.json```
+```link.title.\*``` in file ```i18n\{code}\docusaurus-theme-classic\footer.json```
+
+To view translations locally use a locale specific npm run
 ```console
-yarn build
+npm run start -- --locale {code}
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

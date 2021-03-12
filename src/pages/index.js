@@ -5,33 +5,34 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Translate, {translate} from '@docusaurus/Translate';
 
 const features = [
   {
     title: 'MogAmp',
 	imageUrl: 'king.png',
     description: (
-      <>
+      <><Translate id="homepage.Description.MogAmp" description="The homepage description of MogAmp">
         Conduct an ensemble, sing in chat, play a solo, MogAmp controls it all! Playlist support coming soon.
-      </>
+      </Translate></>
     ),
   },
   {
     title: 'MogDoot',
     imageUrl: 'logo.png',
     description: (
-      <>
+      <><Translate id="homepage.Description.MogDoot" description="The homepage description of MogDoot">
         Play songs in game with high accuracy on command from MogAmp anywhere in the world.
-      </>
+      </Translate></>
     ),
   },
   {
     title: 'MogNotate',
     imageUrl: 'heart.png',
     description: (
-      <>
+      <><Translate id="homepage.Description.MogNotate" description="The homepage description of MogNotate">
         Convert and modify Midi files into MogAmp compatible format. Preview songs out of game.
-      </>
+      </Translate></>
     ),
   },
 ];
@@ -56,8 +57,8 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`MogMusic`}
-      description="It's Moogle Magic! <head />">
+      title={`Home`}
+      description="It's Moogle Magic!">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -69,7 +70,7 @@ export default function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/mogamp')}>
-              Get Started
+              <Translate id="homepage.GetStarted" description="The Get Started Button">Get Started</Translate>
             </Link>
           </div>
         </div>

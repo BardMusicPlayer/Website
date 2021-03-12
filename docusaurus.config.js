@@ -13,10 +13,14 @@ module.exports = {
     navbar: {
       title: 'MogMusic',
       logo: {
-        alt: 'MogMusic Logo',
+        alt: 'Logo',
         src: '/logo.png',
       },
       items: [
+		{
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -91,4 +95,26 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr', 'ja', 'ko'],
+	localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+	  fr: {
+        label: 'Français',
+        direction: 'ltr',
+      },
+      ja: {
+        label: '日本語',
+        direction: 'ltr',
+      },
+      ko: {
+        label: '한국어',
+        direction: 'ltr',
+      },
+    },
+  },
 };
