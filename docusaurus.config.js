@@ -6,29 +6,17 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'MogMusic', // Usually your GitHub org/user name.
-  projectName: 'Website', // Usually your repo name.
+  favicon: '/favicon.ico',
+  organizationName: 'MogMusic',
+  projectName: 'Website',
   themeConfig: {
     navbar: {
       title: 'MogMusic',
       logo: {
         alt: 'MogMusic Logo',
-        src: 'img/logo.png',
+        src: '/logo.png',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-       // {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://twitter.com/MoogleTroupe',
-          label: 'Twitter',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -38,12 +26,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'MogAmp',
+              to: 'docs/mogamp',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'MogDoot',
+              to: 'docs/mogdoot',
+            },
+            {
+              label: 'MogNotate',
+              to: 'docs/mognotate',
             },
           ],
         },
@@ -51,16 +43,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Twitch',
+              href: 'https://twitch.tv/MoogleTroupe',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/4XGHQ72',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/MoogleTroupe',
             },
           ],
         },
@@ -68,17 +60,20 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'YouTube',
+              href: 'https://youtube.com/MoogleTroupe',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/MogMusic',
             },
+			{
+			  label: 'Donate',
+			  href: 'https://streamelements.com/moogletroupe/tip',
+			},
           ],
         },
       ],
-      //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -87,15 +82,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/MogMusic/Website/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
