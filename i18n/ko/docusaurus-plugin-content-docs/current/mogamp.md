@@ -5,22 +5,42 @@ sidebar_label: MogAmp
 ---
 
 
-## What is MogAmp?
+## MogAmp는 무엇인가요?
 
-MogAmp is essentially the "conductor" program. MogAmp does not control your character in-game like MogDoot does, but instead loads songs in the form of .mmsong files and sends commands to one or more instances of MogDoot. 
+MogAmp는 기본적으로 "지휘자" 프로그램입니다.
+MogAmp는 인 게임 캐릭터를 직접 제어하지 않습니다.
+대신에 .mmsong 확장자 파일을 읽어내고, 
+1개 또는 여러 컴퓨터의 MogDoot(연주 프로그램)에게 명령어를 보내는 역할을 합니다.
 
-There is a reason MogAmp and MogDoot are seperate programs instead of one program like BMP. MogAmp and MogDoot were designed to be used not only by "multibox" ensembles, but also ensembles where the bards are running on separate computers, communicating with each other over LAN or the internet. Having one program that is acting as the conductor allows one person to control an ensemble, even if every single bard is running on a completely different computer. The person running the ensemble doesn't even have to be one of the performers!
+BPM처럼 1개의 프로그램으로 통합되지 않고
+MogAmp와 MogDoot가 개별로 구성된 데에는 명확한 이유가 있습니다.
+MogAmp와 MogDoot는 "다중 클라이언트"를 사용하는 합주 유저들뿐만 아니라,
+로컬 LAN 네트워크나 인터넷을 통해 여러 대의 컴퓨터로 합주를 시도하는 유저들을 위해서도 디자인되었습니다.
+지휘자 역할을 하는 별도의 프로그램을 둠으로써
+각기 다른 여러 대의 컴퓨터를 통해 합주를 구성하는 경우도 한 사람이 제어 가능하게 만들었습니다.
+지휘자 역할을 하는 사람은 연주자 당사자일 필요도 없게 되었습니다!
 
-## How to use MogAmp
+## MogAmp 사용법
 
-Only one instance of MogAmp should be running, even if multiple computers are being used. Once MogAmp is running, start one window of MogDoot on every computer that is running a bard. Even if a computer is running several bards, they still only need one MogDoot window open.
+MogAmp는 합주 구성원 안에서 1개만 사용하면 됩니다. 인터넷을 통해 여러 컴퓨터가 합주하는 경우도 포함입니다.
+MogAmp를 켠 후, 컴퓨터 당 1개씩의 MogDoot 프로그램을 켜주세요.
+한 컴퓨터 상에서 다중 클라이언트를 사용하는 경우에도 MogDoot는 1개만 켜면 됩니다.
 
-So, essentially, if you are "multiboxing" and running multiple bards on one computer, start one MogAmp window and one MogDoot window. If you are performing with a friend, or splititng the work between multiple computers, start MogAmp on one computer and one instance of MogDoot on every computer. 
+다시 정리하자면, 한 컴퓨터에서 "다중 클라이언트"를 통해 합주한다면, MogAmp, MogDoot를 한 개씩 켜면 됩니다.
+서브 컴퓨터 등을 활용해 여러 개의 컴퓨터로 합주하거나, 친구들과 함께 합주하는 경우에는 한 컴퓨터에서만 MogAmp를 켜고, 연주에 참여하는 각각의 컴퓨터에서는 MogDoot를 1개씩 켜면 됩니다.
 
-MogAmp should connect to MogDoot if they are both running on the same computer, on the same LAN network, connected to each other through the "MogCloud", or connected through a VPN that simulates a LAN network such as Hamachi or ZeroTier. 
+MogAmp가 MogDoot에 연결됐는지 확인하세요.
+같은 컴퓨터 안에서는 별도의 작업이 필요 없이 자동으로 연결됩니다. 랜선을 통해 한 공유기에 연결된 2대 이상의 컴퓨터들도 자동으로 MogAmp에 연결될 것입니다.
+"MogCloud"를 통해 인터넷으로도 연결할 수 있으며, 또는 하마치나 ZeroTier 등의 가상 네트워크를 통해서도 연결할 수 있습니다.
 
-Once all your bards are connected, it's simply a matter of clicking "Load Song" and selecting the .mmsong file you want to use, hitting "Send to MogDoot" to tell every bard to ready their instruments, and then hitting "Play" to start the song. 
+합주에 참여하는 모든 참가자들이 연결된 것을 확인하셨다면, Load Song 버튼을 누르고 연주하고자 하는 mmsong 파일을 열어주세요. 
+Send to MogDoot를 누르면 각각의 음유시인들이 해당하는 악기를 들고 준비 상태에 들어갑니다.
 
-Note that hitting "Play" will tell every bard to attempt to start ensemble mode (assuming the song has more than one performer). Only the party leader can actually start ensemble mode, but once the party leader successfully does this, the song will immediately start. 
+Play 버튼은 합주 구성원들에게 앙상블 모드를 시작하도록 명령합니다(2명 이상으로 구성된 합주인 경우).
+물론 파티장만이 앙상블 모드를 시작할 수 있습니다만, 파티장에게 문제가 없다면, 연주는 자동으로 시작될 것입니다.
 
-For this to work, the party leader MUST have set their "Xbox BACK Button / Playstation SELECT Button" key binding both in-game and in the Keyboard Setup menu in MogDoot. **If the party leader has not done this, the play button will not work.** For more information on this, check out the page on MogDoot. 
+Play 버튼을 통해 자동으로 연주 시작까지 제어하고자 하는 경우, 
+Xbox BACK Button / Playstation SELECT Button이 파이널판타지14의 인 게임 환경과, 
+MogDoot의 keybinds 키 세팅 메뉴에서 모두 제대로 설정되어 있어야 합니다.
+**파티장 역할의 멤버가 이 설정이 되어있지 않은 경우, Play 버튼은 제 역할을 수행하지 못합니다.**
+관련된 정보는 MogDoot 설명 페이지를 참고해 주세요.
