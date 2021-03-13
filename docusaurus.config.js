@@ -97,20 +97,20 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'ja', 'ko'],
+    locales: ['en', 'ko'],
 	localeConfigs: {
       en: {
         label: 'English',
         direction: 'ltr',
       },
-	  fr: {
-        label: 'Français',
-        direction: 'ltr',
-      },
-      ja: {
-        label: '日本語',
-        direction: 'ltr',
-      },
+//	  fr: {
+//        label: 'Français',
+//        direction: 'ltr',
+//      },
+//      ja: {
+//        label: '日本語',
+//        direction: 'ltr',
+//      },
       ko: {
         label: '한국어',
         direction: 'ltr',
