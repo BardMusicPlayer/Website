@@ -1,17 +1,17 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'MogMusic',
+  title: 'MogAmp',
   tagline: 'It\'s Moogle Magic',
-  url: 'https://mogmusic.app',
+  url: 'https://mogamp.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: '/favicon.ico',
-  organizationName: 'MogMusic',
+  organizationName: 'MogAmp',
   projectName: 'Website',
   themeConfig: {
     navbar: {
-      title: 'MogMusic',
+      title: 'MogAmp',
       logo: {
         alt: 'Logo',
         src: '/logo.png',
@@ -69,7 +69,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/MogMusic',
+              href: 'https://github.com/MogAmp',
             },
 			{
 			  label: 'Donate',
@@ -87,7 +87,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/MogMusic/Website/edit/main/',
+            'https://github.com/MogAmp/Website/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
