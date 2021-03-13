@@ -27,6 +27,7 @@ Language translations are located in the ```i18n\{code}\docusaurus-plugin-conten
 Additionally there are a few strings in these locations that need to be translated:
 
 ```homepage.Description.\*``` and ```homepage.GetStarted``` in file ```i18n\(code}\code.json```
+
 ```link.title.\*``` in file ```i18n\{code}\docusaurus-theme-classic\footer.json```
 
 To view translations locally use a locale specific npm run
