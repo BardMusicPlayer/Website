@@ -79,6 +79,10 @@ module.exports = {
         },
       ],
     },
+	colorMode: {
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+	},
   },
   presets: [
     [
