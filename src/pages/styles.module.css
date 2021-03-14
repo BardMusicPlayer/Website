@@ -4,7 +4,6 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -34,4 +33,72 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.videoBg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+	z-index: -1;
+	width: unset;
+	height: unset;
+}
+
+@media only screen and (min-width: 320px) and (orientation: landscape), {
+  .videoBg {
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 140%;
+    min-height: 140%;
+    transform: translateX(calc((100% - 100vw) / 2));
+	z-index: -1;
+	width: 50%;
+	height: 50%;
+  }
+}
+
+@media only screen and (max-width: 996px) and (orientation: portrait), {
+  .videoBg {
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 240%;
+    min-height: 140%;
+    transform: translateX(calc((100% - 100vw) / 2));
+	z-index: -1;
+	width: 90%;
+	height: 90%;
+  }
+}
+
+@media only screen and (min-width: 997px) and (max-height: 767px) {
+  .videoBg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 200%;
+    min-height: 200%;
+    transform: translateX(calc((100% - 100vw) / 2));
+	z-index: -1;
+	width: 90%;
+	height: 90%;
+  }
+}
+
+@media only screen and (min-width: 997px) and (min-height: 768px) {
+  .videoBg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+	z-index: -1;
+	width: unset;
+	height: unset;
+  }
 }

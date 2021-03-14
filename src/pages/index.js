@@ -59,7 +59,8 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="It's Moogle Magic!">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+
+      <header className={clsx('heroBanner', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -75,19 +76,12 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
+	  
+	  <video className={clsx('videoBg', styles.videoBg)}poster="home-bg/poster.jpg" autoPlay loop playsInline muted >
+	    <source src="home-bg/video.webm" type="video/webm" />
+        <source src="home-bg/video.mp4" type="video/mp4" />
+      </video>
+       
     </Layout>
   );
 }
