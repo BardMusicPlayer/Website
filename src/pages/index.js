@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -55,6 +55,19 @@ function Feature({imageUrl, title, description}) {
 export default function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+  
+  const videoEl = useRef(null);
+
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch(error => {});
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
+  
   return (
     <Layout
       title={`Home`}
@@ -77,7 +90,7 @@ export default function Home() {
         </div>
       </header>
 	  
-	  <video className={clsx('videoBg', styles.videoBg)}poster="home-bg/poster.jpg" autoPlay={true} loop playsInline muted={true} >
+	  <video className={clsx('videoBg', styles.videoBg)}poster="home-bg/poster.jpg" autoPlay={true} loop playsInline muted={true} ref={videoEl} >
 	    <source src="home-bg/video.webm" type="video/webm" />
         <source src="home-bg/video.mp4" type="video/mp4" />
       </video>
