@@ -1,14 +1,14 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
+    "message": "문서",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "Community",
+    "message": "커뮤니티",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "그 외",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.MogAmp": {
@@ -24,27 +24,27 @@
     "description": "The label of footer link with label=MogNotate linking to docs/mognotate"
   },
   "link.item.label.Twitch": {
-    "message": "Twitch",
+    "message": "트위치",
     "description": "The label of footer link with label=Twitch linking to https://twitch.tv/MoogleTroupe"
   },
   "link.item.label.Discord": {
-    "message": "Discord",
+    "message": "디스코드",
     "description": "The label of footer link with label=Discord linking to https://discord.gg/4XGHQ72"
   },
   "link.item.label.Twitter": {
-    "message": "Twitter",
+    "message": "트위터",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/MoogleTroupe"
   },
   "link.item.label.YouTube": {
-    "message": "YouTube",
+    "message": "유튜브",
     "description": "The label of footer link with label=YouTube linking to https://youtube.com/MoogleTroupe"
   },
   "link.item.label.GitHub": {
-    "message": "GitHub",
+    "message": "깃허브",
     "description": "The label of footer link with label=GitHub linking to https://github.com/MogAmp"
   },
   "link.item.label.Donate": {
-    "message": "Donate",
+    "message": "기부하기",
     "description": "The label of footer link with label=Donate linking to https://streamelements.com/moogletroupe/tip"
   }
 }
