@@ -81,7 +81,7 @@ module.exports = {
     },
 	colorMode: {
       defaultMode: 'dark',
-      respectPrefersColorScheme: true,
+	  disableSwitch: true
 	},
   },
   presets: [
@@ -123,7 +123,6 @@ module.exports = {
   },
   plugins: [
     [require.resolve('@cmfcmf/docusaurus-search-local'), {
-      // Options here
     }]
   ],
 };
