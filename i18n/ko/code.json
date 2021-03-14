@@ -156,7 +156,7 @@
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "homepage.GetStarted": {
-    "message": "Get Started",
+    "message": "시작하기",
     "description": "The Get Started Button"
   }
 }
