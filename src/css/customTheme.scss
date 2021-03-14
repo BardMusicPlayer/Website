@@ -396,11 +396,11 @@ html[data-theme="dark"] .avatar__name a {
   .navbar__logo {
     width: 38px;
     height: 34px;
-    transition: transform 0.5s;
+    transition: transform 0.8s;
   }
 
   .navbar__brand:hover .navbar__logo {
-    transform: rotate(180deg) scale(0.9);
+    transform: rotate(-360deg);
   }
 
   .react-toggle {
