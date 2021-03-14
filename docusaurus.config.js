@@ -1,7 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'MogAmp',
-  tagline: 'It\'s Moogle Magic',
   url: 'https://mogamp.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

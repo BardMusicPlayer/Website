@@ -63,7 +63,7 @@ export default function Home() {
       <header className={clsx('heroBanner', styles.heroBanner)}>
         <div className="container">
 		  <h1 className={clsx('hero__title heroBannerText', styles.heroBannerText)}>{siteConfig.title}</h1>
-          <p className={clsx('hero__subtitle heroBannerText', styles.heroBannerText)}>{siteConfig.tagline}</p>
+          <p className={clsx('hero__subtitle heroBannerText', styles.heroBannerText)}><Translate id="homepage.Tagline" description="The Homepage Tagline">It's Moogle Magic!</Translate></p>
           <div className={styles.buttons}>
 			<Link
               className={clsx(

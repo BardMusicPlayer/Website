@@ -158,5 +158,9 @@
   "homepage.GetStarted": {
     "message": "시작하기",
     "description": "The Get Started Button"
+  },
+  "homepage.Tagline": {
+    "message": "It's Moogle Magic!",
+    "description": "The Homepage Tagline"
   }
 }
