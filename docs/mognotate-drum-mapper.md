@@ -11,7 +11,7 @@ Square Enix made the odd decision to give bards drum instruments... and then mak
 
 In midi, due to the unpitched nature of these percussion instruments, they were given an entire channel of their own, where the notes are not arranged in a pitched fashion like the other instruments, but instead in an orderly fashion as shown below. Essentially, when you play note 36 (a C, normally), you get a bass drum, but play note 37 (a D, normally) and you get a snare drum. 
 
-[Insert picture of midi percussion channel]
+![img](/img/gm-standard-drum-map.png)
 
 This is convenient for writing music to be played in midi... but less convenient if you are trying to write music for Final Fantasy XIV. 
 
