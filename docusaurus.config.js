@@ -80,8 +80,7 @@ module.exports = {
       ],
     },
 	colorMode: {
-      defaultMode: 'dark',
-	  disableSwitch: true
+      defaultMode: 'dark'
 	},
   },
   presets: [
@@ -122,7 +121,12 @@ module.exports = {
     },
   },
   plugins: [
-    [require.resolve('@cmfcmf/docusaurus-search-local'), {
-    }]
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+      },
+    ],
   ],
 };
