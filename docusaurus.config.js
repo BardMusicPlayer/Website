@@ -80,8 +80,7 @@ module.exports = {
       ],
     },
 	colorMode: {
-      defaultMode: 'dark',
-	  disableSwitch: true
+      defaultMode: 'dark'
 	},
   },
   presets: [

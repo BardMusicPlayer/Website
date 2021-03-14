@@ -17,6 +17,17 @@
   }
 }
 
+.heroBanner > div > h1, p {
+	color: white !important;
+}
+
+.heroBanner > div > div > a {
+	color: white !important;
+}
+.heroBanner > div > div > a:hover {
+	color: black !important;
+}
+
 .buttons {
   display: flex;
   align-items: center;
