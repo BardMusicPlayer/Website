@@ -14,11 +14,13 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^0.5.0",
     "@docusaurus/core": "2.0.0-alpha.71",
     "@docusaurus/preset-classic": "2.0.0-alpha.71",
+    "@easyops-cn/docusaurus-search-local": "^0.15.0",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
+    "lunr-languages": "^1.4.0",
+    "nodejieba": "^2.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
