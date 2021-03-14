@@ -5,60 +5,60 @@ sidebar_label: MogDoot
 ---
 
 
-## What is MogDoot?
+## MogDoot는 무엇인가요?
 
-MogDoot is the program that actually controls your character(s) and plays the music for you. MogNotate takes orders from MogAmp, the conductor program, and has no interface itself to select and load music files. 
+MogDoot는 실제로 악기 연주를 위해 당신의 캐릭터를 제어하는 프로그램입니다. MogDoot는 음악 불러오기 등의 별도의 제어가 필요 없으며, 지휘자 프로그램인 MogAmp로부터 신호를 받아 작동합니다.
 
-If you are "multiboxing" and running multiple bards on one computer, you will have one instance of MogAmp running and one instance of MogDoot running. If you are using multiple computers, or doing a performance with friends, only one computer will be running MogAmp, while every computer running a performer (or several) will be running MogDoot. 
+다중 클라이언트로 한 컴퓨터에서 합주하고 있다면, 각각 1개씩의 MogAmp와 MogDoot를 사용하면 됩니다. 서브 컴퓨터 등의 여러 컴퓨터로 합주하고 있거나, 친구들과 함께 합주하고 있다면, 각각의 컴퓨터마다 MogDoot를 1개씩 쓰고, 한 컴퓨터에서만 MogAmp를 사용하면 됩니다.
 
-Since MogDoot is only designed to control your character and take orders from another program, there is not much in the way of an interface for it. However, it is incredibly important that you set up your keybindings properly, both in MogDoot and in-game. 
+MogDoot가 캐릭터 제어 용도로 분리되고 다른 프로그램에서 명령을 받도록 설계되면서, 이 프로그램에는 조작이 필요한 부분이 별로 없습니다. 다만, **Keybinds 단축키 설정**이 제대로 되어있는지 항상 유의하여 살펴봐야 합니다.
 
-## Setting up MogDoot
+## MogDoot 설정하기
 
-Once you have started MogDoot, click on "Keybinds" on the top right corner. A window will pop up with all the keybindings you need to set. 
+처음 MogDoot를 실행했다면, 우측 상단의 "Keybinds" 버튼을 눌러줍니다. 단축키 설정 창이 뜰 것입니다.
 
 ![img](/img/mogdoot-keyboard-setup.png)
 
-Note that there is no "correct" keybindings, as long as all the keys you pick actually work in-game. The most important thing is that your keybindings in MogDoot and in FFXIV match. To make sure they match, go ahead and open up your performance settings. While you're at it, make sure that "Assign all notes to keyboard" is checked so that you have access to the full, expanded keyboard. 
+되기만 한다면 이 설정에는 "정답"은 없다는 점을 기억해 주세요. 가장 중요한 것은 파이널판타지14 인 게임에서의 단축키 설정과 일치해야 한다는 점입니다. 캐릭터 제어 관련 키 세팅을 확인하셨다면, 악기 연주 상태로 들어가서 **조작 설정**(톱니바퀴 아이콘) 창을 열어주세요. '모든 계이름을 표시하고 키 할당'을 체크하면 확장된 건반과 함께 전체 음에 대한 단축키를 설정할 수 있습니다.
 
 ![img](/img/in-game-settings.png)
 
-Once you have confirmed that all your notes are properly set up, make sure that your hotbar is set up as well. Note that every instrument needs to be given a hotbar slot that is assigned a keybinding. If the instrument is not given a hotbar slot with a keybinding, MogDoot will be unable to use it. 
+연주에 대한 단축키 설정을 완료하셨다면, 단축바(Hotbar) 세팅도 한 번 확인해보세요. 사용해야 하는 모든 악기가 단축바 위에 올라와 있고, 할당된 단축키를 눌러서 악기를 열 수 있는 상태여야 한다는 점을 유의해 주세요. 악기가 단축바에 올라와 있지 않거나, 올라와 있더라도 해당 단축바에 할당된 단축키가 없는 상태라면, MogDoot는 해당 악기의 연주 모드를 열 수 없습니다.
 
-Lastly, there is a bit of an unusual keybinding that MogDoot requires: the XBox BACK Button/Playstation SELECT Button. This is not bound in FFXIV by default, as it is, as the name suggests, normally a controller button. However, binding this to a keyboard button is essential for the party leader to start ensemble mode. 
+마지막으로, 좀 특별한 키 세팅이 있습니다. "XBox BACK Button/Playstation SELECT Button"이 바로 그 특별한 세팅인데요, 파이널판타지14에서 기본 설정으로 돼있는 키는 아닙니다. 이 단축키는 이름에서 유추할 수 있듯이, 게임패드의 버튼입니다. 이 단축키는 **파티장이 합주를 시작하게 만드는 가장 핵심 기능**을 합니다.
 
-In order to bind this key, press ESC to open your system menu, and then select "Keybind". In the keybind menu, click on "Gamepad" and find the "BACK Button" setting as shown below. Then, assign it to a keyboard key, and make sure you have the same key selected in MogDoot.
+이 단축키를 설정하기 위해서는, "Esc > 단축키 설정"으로 들어가세요. 단축키 설정 창 상단의 "게임패드" 탭애 들어가서 "Back 버튼"을 찾아 설정해 주세요. 단축키 설정을 마쳤다면, MogDoot의 Keybinds에서도 같은 설정으로 되어있는지 꼭 확인해 주세요.
 
 ![img](/img/select-button-keybind.png)
 
-Once this is finished, your game should be set up for performance. 
+이 모든 과정을 마쳤다면, 이제 연주할 준비가 완료된 것입니다.
 
-## Optional: Setting up performance order
+## 선택사항 : 연주자 순서 설정하기
 
-Currently, neither MogDoot nor MogAmp have an interface to select which bard plays what part. Instruments will be assigned essentially at random. If this is not ideal for you, you can change what order your bards are assigned instruments by changing the name of the FFXIV window that bard is running on. 
+*아직은*  MogAmp와 MogDoot에서 각 연주자가 어떤 악기를 들게 할 것인지 설정할 수 없습니다. 악기는 랜덤으로 분배될 것입니다. 이 부분이 마음에 들지 않으신다면, 파이널판타지14의 창 이름 변경을 통해 연주자 순서를 정해줄 수 있습니다.
 
-One way you can do this is by running a window renamer program. If you need a copy of this program, feel free to ask for it on the MogMusic discord. A second option is to use XIVLauncher's "Window Title Changer" plugin. 
+창 이름 변경을 돕는 프로그램들을 사용해볼 수 있습니다. 이 프로그램이 필요하시다면 MogMusic 디스코드 채널에 들어와서 문의해 주세요. 또 다른 방법으로는 파판14 런처에 "Window Title Changer" 플러그인을 사용하는 것입니다.
 
-To arrange your bards, rename their windows by numerical order, such as "FINAL FANTASY XIV 1", "FINAL FANTASY XIV 2" and so on. 
+연주자 순서를 정렬하기 위해서는 창 이름에 숫자를 덧붙여야 합니다. "FINAL FANTASY XIV 1", "FINAL FANTASY XIV 2"등의 예시로, 숫자가 붙은 창은 우선순위가 부여됩니다.
 
-If your performance has a singing part, you must assign a singing part to your bards, such as "FINAL FANTASY XIV singer1", "FINAL FANTASY XIV singer2" and so on.
+만약 가수 파트(채팅 출력)까지 계획하신다면, 채팅 출력을 담당하는 캐릭터의 창 이름도 변경해 줘야 합니다. "FINAL FANTASY XIV singer1", "FINAL FANTASY XIV singer2" 와 같이 설정해 주세요.
 
-Once a window has been renamed, restart MogDoot to finalize these changes. 
+창 이름 변경을 완료하셨다면, MogDoot를 다시 시작하여 이 변경이 반영되도록 해주세요.
 
-## Optional: Hotbar switching macro
+## 선택사항 : 단축바 복사 매크로 (음유 주직을 위한)
 
-If you actually use the bard class for things other than performance, the fact that you need to dedicate at least two whole hotbars with keybindings to your instruments may not be exactly convenient. Thankfully, FFXIV has macro commands to copy hotbars. For example, here's two macros that you could use. The first copies hotbars 8 and 9 into hotbars 1 and 2 respectively, while the second copies hotbars 6 and 7 into hotbars 1 and 2. 
+만약 당신이 음유시인으로 레이드, 던전 등의 다른 컨텐츠도 즐기는 분이라면 악기 연주만을 위해 단축바 두 줄을 모두 소모해야 한다는 점이 썩 달갑지 않을 수 있습니다. 다행스럽게도, 파이널판타지14는 단축바를 복사하는 자체 명령어 기능이 있습니다. 예시로 만든 이 두 매크로를 사용하실 수 있습니다. 첫 번째 매크로는 8, 9번 단축바를 복사해 1, 2번 단축바로 붙여 넣습니다. 두 번째 매크로는 6, 7번 단축바를 복사해 1, 2번 단축바로 붙여 넣습니다.
 
 ```
 /hotbar copy BRD 8 BRD 1
 /hotbar copy BRD 9 BRD 2
-/echo Performance hotbar loaded.
+/echo Music 단축바 불러오기 완료.
 ```
 
 ```
 /hotbar copy BRD 6 BRD 1
 /hotbar copy BRD 7 BRD 2
-/echo Combat hotbar loaded.
+/echo Combat 단축바 불러오기 완료.
 ```
 
-To use this, simply load up hotbar 8 and 9 with your instruments, and hotbars 6 and 7 with your regular combat actions. 
+이 매크로를 활용하고 싶으시다면 음유시인의 8, 9번 단축바에 악기들을 올려주시고, 6, 7번 단축바에는 평소 사용하는 전투 스킬 세팅을 올려주세요.
