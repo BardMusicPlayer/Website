@@ -41,7 +41,7 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/MogMusic"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/MogAmp"
   },
   "link.item.label.Donate": {
     "message": "Donate",
