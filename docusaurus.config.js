@@ -102,7 +102,7 @@ module.exports = {
       {
         docs: {
 		  showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/MogAmp/Website/blob/main/',
