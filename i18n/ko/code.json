@@ -155,18 +155,6 @@
     "message": "본문으로 건너뛰기",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "homepage.Description.MogAmp": {
-    "message": "Conduct an ensemble, sing in chat, play a solo, MogAmp controls it all! Playlist support coming soon.",
-    "description": "The homepage description of MogAmp"
-  },
-  "homepage.Description.MogDoot": {
-    "message": "Play songs in game with high accuracy on command from MogAmp anywhere in the world.",
-    "description": "The homepage description of MogDoot"
-  },
-  "homepage.Description.MogNotate": {
-    "message": "Convert and modify Midi files into MogAmp compatible format. Preview songs out of game.",
-    "description": "The homepage description of MogNotate"
-  },
   "homepage.GetStarted": {
     "message": "Get Started",
     "description": "The Get Started Button"
