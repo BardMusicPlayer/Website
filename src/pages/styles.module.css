@@ -17,14 +17,15 @@
   }
 }
 
-.heroBanner > div > h1, p {
+.heroBannerText {
+	color: white;
+}
+
+.heroBannerButton {
 	color: white !important;
 }
 
-.heroBanner > div > div > a {
-	color: white !important;
-}
-.heroBanner > div > div > a:hover {
+.heroBannerButton:hover {
 	color: black !important;
 }
 

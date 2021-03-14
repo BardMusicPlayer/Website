@@ -62,13 +62,13 @@ export default function Home() {
 
       <header className={clsx('heroBanner', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+		  <h1 className={clsx('hero__title heroBannerText', styles.heroBannerText)}>{siteConfig.title}</h1>
+          <p className={clsx('hero__subtitle heroBannerText', styles.heroBannerText)}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
 			<Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                styles.heroBannerButton,
               )}
               to={useBaseUrl('docs/mogamp')}>
               <Translate id="homepage.GetStarted" description="The Get Started Button">Get Started</Translate>
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </header>
 	  
-	  <video className={clsx('videoBg', styles.videoBg)}poster="home-bg/poster.jpg" autoPlay loop playsInline muted >
+	  <video className={clsx('videoBg', styles.videoBg)}poster="home-bg/poster.jpg" autoPlay={true} loop playsInline muted={true} >
 	    <source src="home-bg/video.webm" type="video/webm" />
         <source src="home-bg/video.mp4" type="video/mp4" />
       </video>
