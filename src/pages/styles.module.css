@@ -92,8 +92,8 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 200%;
-    min-height: 200%;
+    min-width: 150%;
+    min-height: 120%;
     transform: translateX(calc((100% - 100vw) / 2));
 	z-index: -1;
 	width: 90%;
