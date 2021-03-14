@@ -58,43 +58,34 @@ Let's look at a working example of a .yaml file that contains an example of ever
 songs:
 - title: Mario - The Luma and the Hat
   description: 'Bards: 6 Singers: 0'
-  file: 'Mario - The Luma and the Hat.mid'
+  file: Mario - The Luma and the Hat.mid
   standard:
   - tracks:
       0:
-        modifiers: []
     instrument: Panpipes
     octave: 4
     bards: 1
-    modifiers: []
   - tracks:
       1:
-        modifiers: []
     instrument: Saxophone
     octave: 3
     bards: 1
-    modifiers: []
   - tracks:
       2:
-        modifiers: []
     instrument: Lute
     octave: 2
     bards: 1
-    modifiers: []
   - tracks:
       3:
-        modifiers: []
     instrument: Horn
     octave: 2
     bards: 1
-    modifiers: []
   drum:
   - tracks: 
       4:
     snare_drum_bards: 1
     bass_drum_bards: 1
   lyric: []
-
 ```
 
 There's quite a bit to unpack here, so let's just go down this file and explain what everything is doing. It's not really as complicated as it looks at first glance.
@@ -120,14 +111,14 @@ Everything after ```standard:``` and up to the ```drum:``` line will be your sta
   octave: 3
   bards: 1
 ```
-* **instrument:** - This is the instrument that will be given to the bard or bards that play this section. Note that currently you can only assign one instrument per section. Note that instrument names are capitalized with spaces removed. For example, the double bass would be ```DoubleBass```.
+* **instrument:** - This is the instrument that will be given to the bard or bards that play this section. Note that currently you can only assign one instrument per section. Also remember that instrument names are capitalized with spaces removed. For example, the double bass would be ```DoubleBass```.
 * **octave:** - The octave range for the notes in the midi file that you want to be played. The number refers to the octave of the lowest C note in that octave range. For example, ```octave: 3``` means C3-C6, ```octave: 2``` means C2-C5, and ```octave: 4``` means C4-C7. 
 * **bards:** - While you can only assign one type of instrument per section, you can give that instrument to multiple bards! This is especially helpful for tracks with polyphony or chords. A note will only be played by one bard at a time, but if a chord pops up, MogNotate will distribute those notes evenly between the bards. 
-* **modifiers:** - An optional setting that modifies how the program interprets the notes selected. Each track in a section can have a pre-merge modifier, and at the end there is a post-merge modifier. There are currently two possible modifiers: *ignore range* and *move range*. **TODO: PUT MORE INFO HERE.**
+* **modifiers:** - In the future, an optional setting will be added that modifies how the program interprets the notes selected. Each track in a section will have a pre-merge modifier, and at the end there will be a post-merge modifier. There will be possible modifiers: *ignore range* and *move range*.
 
 ### Drum mapping
 
-One of the biggest inconveniences in writing bard music in Midi is that the in-game percussion are pitched, while the percussion instruments in midi files are assigned to notes on the percussion channel in an orderly, yet non-pitched fashion. MogNotate will help you by mapping percussion events to their proper in-game note for the bass drum, snare drum, cymbal, and bongo! Note: The Timpani actually IS a pitched instrument in real life, and should be mapped in the normal instrument section.
+One of the biggest inconveniences in writing bard music in Midi is that the in-game percussion are pitched, while the percussion instruments in midi files are assigned to notes on the percussion channel in an orderly, yet non-pitched fashion. MogNotate will help you by mapping percussion events to their proper in-game note for the bass drum, snare drum, cymbal, and bongo! Note: The timpani actually IS a pitched instrument in real life, and will usually be mapped in the standard instrument section above.
 
 If you have no drums in your song, you can simply leave the section blank with ```drums: []```.
 

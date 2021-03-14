@@ -7,7 +7,7 @@ sidebar_label: MogDoot
 
 ## What is MogDoot?
 
-MogDoot is the program that actually controls your character(s) and plays the music for you. MogNotate takes orders from MogAmp, the conductor program, and has no interface itself to select and load music files. 
+MogDoot is the program that actually controls your character(s) and plays the music for you. MogDoot takes orders from MogAmp, the conductor program, and has no interface itself to select and load music files. 
 
 If you are "multiboxing" and running multiple bards on one computer, you will have one instance of MogAmp running and one instance of MogDoot running. If you are using multiple computers, or doing a performance with friends, only one computer will be running MogAmp, while every computer running a performer (or several) will be running MogDoot. 
 
