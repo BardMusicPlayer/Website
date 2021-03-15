@@ -101,10 +101,10 @@ songs:
 
 ### 파일 헤더 (시작 부분)
 
-가장 먼저 작성해야 할 것은 곡의 제목, 설명, 그리고 어떤 미디 파일을 음악 데이터로 사용할 것인지를 명시하는 것입니다.
+가장 먼저 작성해야 할 것은 **곡의 제목**, **설명**, 그리고 어떤 **미디 파일**을 음악 데이터로 사용할 것인지를 명시하는 것입니다.
 
 * **title:** - 여기에 곡의 제목을 적으면 됩니다. 이 곳에 넣은 제목은 MogNotate 또는 MogAmp에서 불러왔을 때 표기됩니다. 만약 관객들에게 지금 연주하는 곡의 제목을 알려주고 싶다면, MogAmp에 출력된 제목을 드래그해서 복사 & 붙여넣기 하면 아주 편리합니다.
-* **description:** - 기본적으로 MogNotate가 미디를 불러오기 할 때 몇 명의 음유시인과 가수(채팅 출력 캐릭터)가 필요한지 이곳에 적어 둘 것입니다. 하지만 이 부분도 여러분이 원하는 대로 고칠 수 있습니다.
+* **description:** - 기본적으로 MogNotate가 미디를 불러오기 할 때 여기를 자동으로 작성할겁니다. 음유시인이나 가수가 **총 몇 명**이 필요한지 적는 곳입니다. 하지만 이 부분도 여러분이 원하는 대로 고칠 수 있습니다.
 * **file:** - 사용하고자 하는 미디의 파일 이름을 이 곳에 기입합니다. 주의 : 미디 파일과 yaml 파일을 같은 폴더 안에 보관하는 것이 좋습니다.
 
 ### 악기 선택
@@ -143,15 +143,15 @@ If your song has no lyrics, simply leave the section blank with ```lyric: []```.
 
 If you would like to add lyrics to your song, check out the page on the lyrics mapper. 
 
-## What are "active voices"?
+## "active voices"는 무엇인가요?
 
-In FFXIV, every time you play a note, you are playing a sound sample. Even if you let go of that note, the sound sample will continue to play to completion. This is called a "voice". The actual length of this sound sample depends on the instrument in particular, and can last around a second or more. Essentially, when you strum a three-note chord on your harp, you are actually creating three overlaping voices. 
+파이널판타지14 속에서 한 음을 연주할 때마다 소리 샘플 파일이 재생됩니다. 건반에서 손을 떼더라도 소리 샘플은 그 여운이 끝날 때까지 계속 재생됩니다. 바로 이것이 "voice"라고 불립니다. 소리 샘플의 "실제 길이"는 악기에 따라 모두 다르며, 1초 이상의 긴 여운을 남기는 악기도 있습니다. 본질적으로, 하프에서 세 음을 친다면, 실제로 소리 세 개를 겹쳐 쌓아서 화음을 이루게 됩니다.
 
-The reason we care about this system is that FFXIV limits the amount of notes that are playing at any one time client-side. This limit is 16 active voices at a time. This sounds like a lot, but with particularly fast songs with many parts, you can easily hit this limit. When this limit is hit, any new voices being added will trigger the sudden deletion of the oldest still active voice.
+우리가 이 시스템을 주의하는 이유는, 파이널판타지14 클라이언트에서 한 번에 재생되는 **소리의 개수를 제한**하는 데에 원인이 있습니다. 한 번에 16 active voices라는 제한이 있는데요, 많은 듯 보이지만 빠르게 연주되는 곡들은 이 "16"의 제한에 금방 부딪히게 됩니다. 이 소리 중첩 제한을 넘겨서 추가로 악기 소리가 더해지면, 오래된 소리 샘플부터 **갑작스럽게** 삭제됩니다. 
 
-This is most noticeable for longer, sustained notes that play while another instrument (or several) plays a faster section with more notes. However, if the oldest voice is a note that has long since stopped being audible, then this deletion is not a problem. 
+이 현상은 특히 **소리의 여운이 길게 남는 악기**로 **빠른 속도의 연주**를 할 때 굉장히 두드러지게 나타납니다. 물론, 가장 오래된 소리 샘플이 이미 건반에서 손을 뗀 지 오래되어 소리가 들릴락 말락 하게 남아있던 것이라면 이런 현상은 별문제가 되지 않습니다.
 
-MogNotate will simulate this system, displaying the active number of voices playing at any one time. This will help you spot sections of your song where a sustained note may suddenly be deleted because of too many active voices. If you would like to hear what a song would sound like without this system, you can uncheck "Limit Active Voices" to remove this cap. 
+MogNotate는 이 시스템을 미리 시뮬레이션해서 현재 재생되고 있는 active voice(활성 소리 샘플)의 수를 보여줍니다. 이 기능은 곡 연주 중 소리가 갑자기 끊어지는 부분이 어디에 나타날지 찾는 데에 도움이 됩니다. 이런 기능 없이 곡을 들어보고 싶으시다면 "Limit Active Voices" 체크박스를 해제해 주세요. 
 
 ## 게임 속 악기의 옥타브 범위
 
