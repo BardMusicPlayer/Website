@@ -5,25 +5,25 @@ sidebar_label: MogNotate
 ---
 
 
-## What is MogNotate?
+## MogNotate는 무엇인가요?
 
-MogNotate is a program to help preview what your midi file will sound like when played in-game. It is also used in the essential step of converting a .mid file into a .mmsong file, which is the file format that MogAmp uses. 
+MogNotate는 midi 파일이 게임 속에서 어떻게 연주될지 미리 듣기를 제공하는 프로그램입니다. 또한 midi 파일을 MogAmp(지휘자 프로그램)에서 사용하는 mmsong 확장자로 변환하는 핵심 단계들을 수행하는 프로그램입니다.
 
-Generally, you will want to preview a song in MogNotate before playing it for an audience. Doing this will help you decide what instruments to use, as well as spot errors and mistakes you'd otherwise miss. MogNotate will also help simplify your songmaking proccess by handling some tasks for you, such as distributing notes to multiple players using the same instrument. 
+일반적으로, 청중 앞에서 연주하기 전, 이 곡의 실제 소리가 어떨지 미리 듣기 위해 사용하게 될 것입니다. 이는 당신이 어떤 악기가 더 어울리는지 고르는 데 도움이 되고, 발견하지 못했던 실수를 찾아내는데도 매우 도움이 될 것입니다. MogNotate는 화음으로 이루어진 하나의 미디 트랙을 같은 악기를 든 여러 명의 음유시인이 나눠 연주하도록 분배하는 기능 등, 곡 작업을 간소화하는 여러 도움을 주기도 합니다.
 
-## Importing songs into MogNotate
+## MogNotate로 곡 불러오기
 
-There are two ways to import songs into MogNotate: The first is to import in a BMP formatted midi, the second is to write or edit an existing .yaml file and import that. 
+MogNotate에서 곡을 불러오는데는 2가지 방법이 있습니다. 첫 번째 방법은 BMP에서 호환되는 midi 파일을 불러오는 것이고, 두 번째 방법은 .yaml 파일을 새로 작성하거나 편집하여 불러오는 방법입니다.
 
 ![img](/img/MogNotateScreenshot.png)
 
-If you were previously using BMP and have your .mid files formatted to be used in it, then most of your work is already done. Simply click the "Import BMP Midi" button and select your .mid file. Importing in a midi file this way will automatically create a .yaml file for you. BMP formatting is pretty simple, and mostly just involves renaming any tracks you want to use. It's even a good starting point, if you want to make further changes to the .yaml file MogNotate helps you create.
+당신이 이미 BMP를 위해서 midi 파일을 만들어서 사용하고 계셨다면, 당신의 곡들은 이미 연주할 준비가 거의 된 상태입니다. 그냥 "Import BMP Midi" 버튼을 누르고 그 midi 파일을 선택해서 불러와주세요. 이렇게 midi 파일을 불러오면 자동적으로 .yaml 확장자 파일이 생성됩니다. BMP 포맷은 매우 간단하며, 보통 미디 트랙의 이름만 바꾸는 기능을 합니다. 만약 MogNotate가 만든 yaml 파일을 사용해 곡 수정 작업을 하고 싶다면, 이는 매우 좋은 시작점이 됩니다.
 
-Writing or editing a .yaml file directly gives you some additional features, such as the ability to map percussion tracks, add multiple instruments for a single track, or even give your song lyrics. The file can be opened in any basic text editor, although a graphical user interface to build and edit the file specifically for use in MogNotate is in the works. Once your .yaml file has been created, click the "Load MogNotate Yaml" button to select it. 
+.yaml 파일 작성은 직접적으로 여러 추가 기능을 제공합니다. 타악기 트랙을 짜고, 한 트랙을 여러 악기로 분배하고, 곡에 가사(채팅 출력) 기능을 넣을 수 있습니다. 이 yaml 확장자 파일은 현재 MogNotate에서 바로 다룰 수 있도록 도구를 개발 중에 있지만, 지금도 메모장이나 워드패드 등의 텍스트 프로그램에서도 열 수 있습니다. yaml 파일을 작성하셨다면 "Load MogNotate Yaml" 버튼으로 불러올 수 있습니다.
 
-If you make any changes to the .yaml file, you can click "Reload Current MogNotate Yaml" to update MogNotate and hear these changes. 
+현재 불러온 yaml 파일을 수정했다면, "Reload Current MogNotate Yaml" 버튼을 눌러서 MogNotate 상에서 변화를 확인해 볼 수 있습니다.
 
-Doing any of these will also generate a .mmsong file. This file is unique to MogApp, and contains both the song data as well as things like instrument selection and lyrics. This .mmsong file is what you will need to select a song in MogAmp when it's finally time to perform your music. If you want to go back and appreciate your past work, you can also load a .mmsong file into MogNotate to listen to it by pressing the "Load MMSong" button. 
+두 가지의 불러오기는 모두 mmsong 확장자 파일을 생성합니다. 이 확장자는 음악 데이터는 물론, 악기 정보와 가사 텍스트 등을 모두 담고 있는 MogApp만의 고유 확장자입니다. 이 mmsong 파일이 바로 최종적으로 합주할 때 MogAmp에서 불러와야 하는 파일입니다. 완료해둔 작업들을 둘러보고 싶다면, MogNotate의 "Load MMSong" 버튼으로 불러와서 단순 미리 듣기 감상도 가능합니다. 
 
 ## About BMP Format
 
