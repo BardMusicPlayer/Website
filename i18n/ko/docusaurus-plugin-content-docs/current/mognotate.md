@@ -120,10 +120,10 @@ songs:
   octave: 3
   bards: 1
 ```
-* **instrument:** - This is the instrument that will be given to the bard or bards that play this section. Note that currently you can only assign one instrument per section. Note that instrument names are capitalized with spaces removed. For example, the double bass would be ```DoubleBass```.
-* **octave:** - The octave range for the notes in the midi file that you want to be played. The number refers to the octave of the lowest C note in that octave range. For example, ```octave: 3``` means C3-C6, ```octave: 2``` means C2-C5, and ```octave: 4``` means C4-C7. 
-* **bards:** - While you can only assign one type of instrument per section, you can give that instrument to multiple bards! This is especially helpful for tracks with polyphony or chords. A note will only be played by one bard at a time, but if a chord pops up, MogNotate will distribute those notes evenly between the bards. 
-* **modifiers:** - An optional setting that modifies how the program interprets the notes selected. Each track in a section can have a pre-merge modifier, and at the end there is a post-merge modifier. There are currently two possible modifiers: *ignore range* and *move range*. **TODO: PUT MORE INFO HERE.**
+* **instrument:** - 이 곳은 해당하는 트랙을 연주할 음유시인(들)이 사용할 악기를 골라주는 곳입니다. *아직은* 한 섹션당 한 악기만 할당할 수 있습니다. 악기 이름은 띄어쓰기는 없이, 대문자를 넣어서 입력해야 합니다. 예를 들면 더블 베이스(double bass)는 ```DoubleBass``` 라고 입력해야 합니다.
+* **octave:** - 재생할 음에 대한 옥타브 범위를 정해주는 곳입니다. 숫자는 연주될 범위 안에서 가장 낮은 도(C) 음을 나타냅니다. ```octave: 3``` 표기는 C3-C6 범위를 연주할 것을 의미합니다. ```octave: 2``` 표기는 C2-C5, ```octave: 4``` 표기는 C4-C7 범위를 연주할 것을 의미합니다. 
+* **bards:** - 섹션당 악기는 한 종류만 고를 수 있지만, 연주자 수는 여러 명이 연주하도록 배분할 수 있습니다! 이 기능은 특히 **화음**이 있는 트랙에 유용합니다. 한 음만 있는 부분은 한 명만 연주하다가, 화음 부분에서는 할당된 연주자들이 나눠서 연주하도록 MogNotate가 자동 배분합니다.
+* **modifiers:** - *나중에* 프로그램이 트랙의 음을 어떻게 해석할지 수정하는 부가기능이 추가됩니다. 섹션의 각각의 트랙에는 pre-merge modifier를 붙이고, 마지막에는 post-merge modifier를 줄 것입니다. *ignore range(범위 무시하기)*, *move range(범위 옮기기)* 라는 기능을 만들 것입니다.
 
 ### Drum mapping
 
