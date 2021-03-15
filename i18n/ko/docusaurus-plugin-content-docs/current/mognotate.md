@@ -162,7 +162,7 @@ MogNotate는 이 시스템을 미리 시뮬레이션해서 현재 재생되고 �
 | Piano             | C4-C7   |
 | Harp              | C3-C4   |
 | Fiddle(피치카토)   | C2-C5   |
-| Lute(스틸기타)     | C2-C5   |
+| Lute(스틸 기타)    | C2-C5   |
 |                   |         |
 | Fife(피콜로)       | C5-C8   |
 | Flute             | C4-C7   |
