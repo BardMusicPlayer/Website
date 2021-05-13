@@ -55,5 +55,3 @@ The lower the starting octave, the lower pitched it will sound.
 
 **Extra Limitations**
 The maximum note speed is approximately 14 notes a second (50ms between each) if the game is running at a locked 60fps. Higher fps does not change anything. Lower fps will cause misses and/or reduce the playback speed.
-
-*Bard Music Player (c) paru 2018 - 2021, (c) MoogleTroupe 2021*
